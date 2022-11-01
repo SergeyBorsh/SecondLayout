@@ -1,7 +1,7 @@
 *
   font-family: 'Roboto', sans-serif
 
-$blue_color:#1eacc7
+$blue_color: #1eacc7
 
 header
   position: relative
@@ -9,6 +9,7 @@ header
 
 nav
   position: fixed
+  z-index: 100
   width: 100%
   height: 51px
   background-color: #212121
@@ -137,6 +138,7 @@ nav
   padding: 71px 0 65px 0
 
 .advantages
+  position: relative
   display: block
   margin: 0 auto
   text-align: center
@@ -150,8 +152,10 @@ nav
   background-color: #000000
   align-items: center
   line-height: 25px
+  z-index: 2
 
 .main_reasons
+  position: relative
   font-size: 38px
   font-weight: 700
   text-transform: uppercase
@@ -160,6 +164,7 @@ nav
   margin: 0
   text-align: center
   margin-top: 38px
+  z-index: 2
 
 .item_block
   display: flex
@@ -242,9 +247,8 @@ nav
       left: 50%
       transform: translateX(-50%)
 
-
-
 .subtitle
+  position: relative
   font-size: 17px
   font-weight: 400
   color: #222222
@@ -253,3 +257,47 @@ nav
   text-align: center
   margin-top: 19px
   margin-bottom: 13px
+  z-index: 2
+
+/*секция с автомобилем*/ 
+.car
+  position: relative
+  min-height: 896px
+  padding: 57px 0 138px 0
+  background: url(../img/sect3/mobile_bg.png) center (center / cover) no-repeat
+  .black
+    position: absolute
+    top: 0
+    left: 0
+    height: 499px
+    background-color: #070716
+    width: 100%
+    z-index: 1
+
+.advantages_white
+  background-color: #ffffff
+  color: #070716
+
+.main_reasons_white
+  color: #ffffff
+
+.subtitle_white
+  color: #ffffff
+
+.car_img
+  position: relative
+  z-index: 2
+  display: block
+  margin: 0 auto
+  margin-top: 56px
+
+.car_desc
+  position: absolute
+  margin: 0 auto
+  left: 50%
+  transform: translateX(-50%)
+  font-size: 17px
+  line-height: 24px
+  font-weight: 300
+  color: #222222
+  text-align: center
