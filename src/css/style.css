@@ -26,12 +26,12 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.menu .menu_item {
+.menu_item {
   list-style: none;
   border-right: 2px dotted black;
   padding-right: 28px;
 }
-.menu .menu_item .menu_link {
+.menu_link {
   text-decoration: none;
   font-size: 15px;
   font-weight: 300;
@@ -45,26 +45,26 @@ nav {
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.subheader .subheader_logo {
+.subheader_logo {
   display: block;
   max-width: 100%;
   margin-top: 16px;
 }
-.subheader .subheader_text {
+.subheader_text {
   margin-top: 6px;
   opacity: 0.5;
   font-size: 13px;
   font-weight: 100;
   color: #ffffff;
 }
-.subheader .subheader_call {
+.subheader_call {
   margin-top: 23px;
   font-size: 12px;
   font-weight: 300;
   color: #ffffff;
   text-align: right;
 }
-.subheader .subheader_phone {
+.subheader_phone {
   display: block;
   margin-top: 8px;
   font-size: 22px;
@@ -75,7 +75,7 @@ nav {
   text-decoration: none;
   line-height: 12px;
 }
-.subheader .subheader_btn {
+.subheader_btn {
   margin-top: 16px;
   width: 178px;
   height: 52px;
@@ -97,7 +97,7 @@ nav {
   background: url(../img/sect1/promo_back.jpg) center center/cover no-repeat;
   padding: 151px 0 135px 0;
 }
-.promo .promo_header {
+.promo_header {
   font-size: 60px;
   line-height: 60px;
   font-weight: 900;
@@ -106,7 +106,7 @@ nav {
   margin: 0;
   text-align: center;
 }
-.promo .promo_subheader {
+.promo_subheader {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -116,7 +116,7 @@ nav {
   margin-top: 22px;
   text-align: center;
 }
-.promo .promo_desc {
+.promo_desc {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -124,7 +124,7 @@ nav {
   text-align: center;
   margin-top: 23px;
 }
-.promo .promo_btn {
+.promo_btn {
   display: block;
   font-size: 18px;
   font-weight: 400;
