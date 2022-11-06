@@ -91,6 +91,10 @@ nav {
   color: #ffffff;
   border-radius: 4px;
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
 
 .promo {
   min-height: 800px;
@@ -141,6 +145,10 @@ nav {
   border-radius: 4px;
   margin: 0 auto;
   margin-top: 115px;
+}
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
 }
 
 /* Вторая секция */
@@ -297,6 +305,31 @@ nav {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.mobile_item_plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile_item_plus:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
 
 .subtitle {
   position: relative;
@@ -360,4 +393,55 @@ nav {
   font-weight: 300;
   color: #222222;
   text-align: center;
+}
+
+.require {
+  min-height: 919px;
+  background-color: #fff;
+  padding: 68px 0 84px 0;
+}
+.require_block {
+  margin: 33px 0;
+}
+.require_block_nmb {
+  margin-bottom: 0;
+}
+.require_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 24px;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.require_list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  background: url("../img/sect5/blue_check_mark.png") center center/cover no-repeat;
+  width: 21px;
+  height: 20px;
+}
+.require_desc {
+  font-size: 17px;
+  font-weight: 300;
+  color: #1eacc7;
+}
+.require .warning .require_title {
+  color: #ff5656;
+}
+.require .warning .require_list li:before {
+  background: url("../img/sect5/red_check_mark.png") center center/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */

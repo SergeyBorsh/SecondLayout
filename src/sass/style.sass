@@ -2,6 +2,12 @@
   font-family: 'Roboto', sans-serif
 
 $blue_color: #1eacc7
+$red_color: #ff5656
+
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $blue_color
 
 header
   position: relative
@@ -28,7 +34,6 @@ nav
     font-size: 15px
     font-weight: 300
     color: #ffffff
-
 
 .subheader
   position: absolute
@@ -75,6 +80,7 @@ nav
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
     color: #ffffff
     border-radius: 4px
+    @include btn_hover
 
 .promo
   min-height: 800px
@@ -119,6 +125,7 @@ nav
     border-radius: 4px
     margin: 0 auto
     margin-top: 115px
+    @include btn_hover
 
 /* Вторая секция
 
@@ -236,6 +243,26 @@ nav
       margin: 0 auto
       left: 50%
       transform: translateX(-50%)
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $blue_color
+        transition: 0.3s all
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 2px
+        height: 14px
+        background-color: $blue_color
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $red_color
 
 .subtitle
   position: relative
@@ -291,3 +318,47 @@ nav
   font-weight: 300
   color: #222222
   text-align: center
+
+.require
+  min-height: 919px
+  background-color: #fff
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0
+  &_title
+    font-size: 22px
+    font-weight: 400
+    color: #1ca8c3
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 24px
+      font-weight: 300
+      color: #222222
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        background: url('../img/sect5/blue_check_mark.png') center (center/cover)no-repeat
+        width: 21px
+        height: 20px
+  &_desc
+    font-size: 17px
+    font-weight: 300
+    color: $blue_color
+  .warning
+    .require_title
+      color: $red_color
+    .require_list
+      li
+        &:before
+          background: url('../img/sect5/red_check_mark.png') center (center/cover)no-repeat
