@@ -294,6 +294,8 @@ nav
 .advantages_white
   background-color: #ffffff
   color: #070716
+  &_sz
+    width: 76px
 
 .main_reasons_white
   color: #ffffff
@@ -362,3 +364,102 @@ nav
       li
         &:before
           background: url('../img/sect5/red_check_mark.png') center (center/cover)no-repeat
+
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/sect6/map.png') center (center/cover) no-repeat
+  &_link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    font-size: 15px
+    line-height: 68px
+    font-weight: 400
+    text-transform: uppercase
+    color: #1fbad6
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      color: #fff
+
+footer
+  height: 148px
+  padding: 11px 23px
+  background: #FFFFFF
+
+.footer_dash
+  display: block
+  margin: 0 auto
+  width: 299px
+  height: 4px
+  background-color: #1fbad6
+
+.footer_wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding-top: 32px
+  >div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  .footer_icons
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &_item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      text-decoration: none
+      i
+        color: #fff
+  .footer_links
+    display: block
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_lang
+      display: block
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+      text-decoration: none
+  .footer_mobile
+    display: flex
+    a
+      margin: 0 3px
+      img
+        width: 100%
